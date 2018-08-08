@@ -5,8 +5,15 @@
 </head>
 <body>
 	<script type="text/javascript">
-		console.log(window);
-		window.alert("Are you sure?");
+		console.log("Start");
+		//console.log("Print");
+		print("Print");
+		console.log("End");
+		function print(s){
+			setTimeout(function(){
+				console.log(s);
+			},1000);
+		};
 	</script>
 
 </body>
