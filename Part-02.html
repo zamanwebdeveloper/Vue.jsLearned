@@ -7,11 +7,14 @@
 	<script type="text/javascript">
 		console.log("Start");
 		//console.log("Print");
-		print("Print");
-		console.log("End");
-		function print(s){
+		print("Print", function(){
+			console.log("End");
+		});
+		
+		function print(s, callback){
 			setTimeout(function(){
 				console.log(s);
+				callback();
 			},1000);
 		};
 	</script>
